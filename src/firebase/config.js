@@ -4,27 +4,19 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAoq0TPJqP2Ul3094akHGI43jj0SIM-MAI",
-  authDomain: "arthocare-ai.firebaseapp.com",
-  projectId: "arthocare-ai",
-  storageBucket: "arthocare-ai.firebasestorage.app",
-  messagingSenderId: "981989352300",
-  appId: "1:981989352300:web:8481cbaabea71febb94949",
-  measurementId: "G-YLHYDZEKN9"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Analytics (optional)
 const analytics = getAnalytics(app);
-
-// Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
-
-// Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
 export { app, analytics, auth, db };
