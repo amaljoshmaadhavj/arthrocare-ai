@@ -7,7 +7,6 @@ import RegisterPage from "./pages/RegisterPage";
 import PatientPage from "./pages/PatientPage";
 import AdminPage from "./pages/AdminPage";
 import PatientDashboard from "./components/patient/PatientDashboard";
-import AdminRouteGuard from "./components/AdminRouteGuard";
 
 /**
  * Helpers for route protection
