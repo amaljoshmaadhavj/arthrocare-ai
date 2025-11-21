@@ -136,13 +136,15 @@ const ProgressTracking = () => {
         currentAntiCCP: Number(formData.currentAntiCCP)
       };
 
-      // 🔥 CONNECTING TO 127.0.0.1 (FIXED)
-      const response = await fetch('http://127.0.0.1:5000/api/compare-ra-risk', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        mode: 'cors',
-        body: JSON.stringify(payload)
-      });
+const response = await fetch(
+  `${import.meta.env.VITE_BACKEND_URL}/api/compare-ra-risk`,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    mode: 'cors',
+    body: JSON.stringify(payload)
+  }
+);
 
       const responseText = await response.text();
       let result;
