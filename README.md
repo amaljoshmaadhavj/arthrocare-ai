@@ -66,6 +66,10 @@ arthrocare-ai/
 - Auth: Firebase
 - Deployment: Docker / Render (config included)
 
+## Live Demo
+Frontend: https://arthrocare-ai.vercel.app
+Backend: Hosted via Render
+
 ## Limitations
 
 - Depends on lab report accuracy
@@ -74,6 +78,5 @@ arthrocare-ai/
 
 ## Contributors
 
-Santhosh Kumar R  
-Amaljosh Maadhav J  
-Harish S
+[@Santhosh Kumar R](https://github.com/Santhosh-0031)
+[@Amaljosh Maadhav J](https://github.com/amaljoshmaadhavj)
