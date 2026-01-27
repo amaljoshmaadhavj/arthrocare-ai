@@ -1,5 +1,3 @@
-<div align="center">
-
 # ArthroCare AI
 
 ### Intelligent Clinical Decision Support for Rheumatoid Arthritis
@@ -10,7 +8,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-brightgreen.svg)](https://www.python.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-LTS-brightgreen.svg)](https://nodejs.org/)
 
-</div>
 
 ## Overview
 
